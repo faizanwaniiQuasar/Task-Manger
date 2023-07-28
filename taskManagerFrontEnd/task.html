@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="task.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome">
+        <h2>
+          <div class="showUser"></div>
+        </h2>
+        <button class="log" type="submit" id="logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </div>
+      <div class="task-manager">
+        <h2>
+          Task Manager
+          <i class="fa-solid fa-list-check"></i>
+        </h2>
+        <form class="taskForm" id="taskFormAdd">
+          <div class="row">
+            <input
+              type="text"
+              id="task-name"
+              placeholder="Enter Task Name"
+              name="taskName"
+              required
+            />
+            <button id="addTask"><h3>Add</h3></button>
+          </div>
+          <div class="row2">
+            <textarea
+              required
+              style="resize: none"
+              id="task-description"
+              name="taskDesc"
+              placeholder="Enter Task Description"
+              rows="4"
+              cols="50"
+            ></textarea>
+            <!-- <input
+              type="text"
+              id=""
+             
+              name=""
+            /> -->
+          </div>
+        </form>
+
+        <div id="list-container">
+          <!-- <li class="checked">Task1</li>
+          <li>Task1</li>
+          <li>Task1</li> -->
+        </div>
+      </div>
+    </div>
+    <dialog id="editModal" class="taskModal">
+      <div class="task-mana">
+        <h2>Update Task</h2>
+        <form class="updatedTaskForm" id="updateForm">
+          <div class="row">
+            <input
+              type="text"
+              id="updateName"
+              class="task-update-name"
+              placeholder="Enter Task Name"
+              name="taskNameUpdated"
+            />
+          </div>
+          <div class="row2">
+            <textarea
+              id="updateDesc"
+              name="updateDescTask"
+              class="task-update"
+              placeholder="Enter Task Description"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+          <div class="row3">
+            <input type="checkbox" id="updateCheck" name="completedTask" />
+            <label for="updateCheck">Completed</label><br />
+          </div>
+          <button id="addTask" class="updateChanges">Save Changes</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="task.js"></script>
+  </body>
+</html>

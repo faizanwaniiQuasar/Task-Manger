@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager SignUp</title>
+    <link rel="stylesheet" href="signup.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="signUp">
+          <h1>
+            Task Manager
+            
+          </h1>
+          <form class="signUpForm" >
+            <!-- <div class="row"> -->
+              <input
+                type="text"
+                class="row"
+                placeholder="Enter Your Name"
+                required
+                name="signUpName"
+              />
+              <input
+              class="row"
+                type="email"
+                placeholder="Enter Your Email"
+                name="signUpEmail"
+                required
+              />
+              <input
+              class="row"
+                type="password"
+                
+                placeholder="Enter Your Password"
+                name="signUpPass"
+                required
+              />
+
+              <input
+              class="row"
+                type="password"
+                id="task-name"
+                placeholder="Confirm Password"
+                name="signUpConPass"
+                required
+              />
+              <button class="buttonRow"><h2 >Sign Up</h2></button>
+              
+              <p>Already a member? <a href="login.html">click here!</a></p>
+            <!-- </div> -->
+            
+          </form>
+          
+          </div>
+          <script src="signup.js"></script>
+</body>
+</html>

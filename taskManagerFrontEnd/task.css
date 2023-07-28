@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.welcome {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.welcome h2 {
+  margin-right: 10px;
+  color: #557a46;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00cdac, #02aab0);
+  padding: 10px;
+}
+.task-manager {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  margin: 40px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #35a29f;
+}
+h2 {
+  color: #ff5945;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.task-manager h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+#task-name {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+.task-update-name {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+#task-description {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  height: 100px;
+}
+.task-update {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  height: 100px;
+  resize: none;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+
+  background: #c2dedc;
+  color: #ff5945;
+  font-size: 20px;
+
+  cursor: pointer;
+  border-radius: 20px;
+}
+.updateChanges {
+  margin-top: 20px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(Resources/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(Resources/checked.png);
+}
+
+.card {
+  background-color: #edeef0;
+  /* border: 1px solid; */
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.outerClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.updateButton {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+.updateButton i {
+  color: #ff5945;
+}
+
+.deleteButton {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.deleteButton i {
+  color: #ff5945;
+}
+.taskName {
+  color: #ff5945;
+  font-weight: bold;
+  font-size: 20px;
+}
+.taskNameCompleted {
+  text-decoration: line-through;
+}
+.taskDesc {
+  color: #557a46;
+  font-size: 16px;
+  font-weight: 570;
+}
+
+/* .buttonClass {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+} */
+/* 
+MODAL EDIT here */
+#editModal {
+  width: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  background: #fff;
+  margin: 50px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  border: none;
+}
+h2 i {
+  margin-left: 10px;
+}
+.log {
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  /* background: #c2dedc; */
+  color: #ff5945;
+  font-size: 20px;
+  background-color: #edeef0;
+  cursor: pointer;
+  border-radius: 40px;
+}
