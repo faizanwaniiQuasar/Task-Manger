@@ -1,5 +1,5 @@
 # Task-Manger
-Task Manager app using Html Css Js Node.js MongoDB with Authentication.
+Task Manager app using Html Css Js Node.js MongoDB with Authentication
 
 ![Screenshot (16)](https://github.com/faizanwaniiQuasar/Task-Manger/assets/129840881/a598f8a8-41bf-4e88-9e36-24acdda569d1)
 
